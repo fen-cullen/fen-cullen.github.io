@@ -45,5 +45,5 @@ dl {
 }
 
 dl dd {
-    list-style: circle;
+    list-style-type: circle;
 }
