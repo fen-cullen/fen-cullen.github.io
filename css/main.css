@@ -50,6 +50,7 @@ dt {
 
 dd {
     font-size: 1.25em;
+    display: list-item;
     list-style-type: circle;
     list-style-position: outside;
 }
