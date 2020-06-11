@@ -30,7 +30,7 @@ h2 {
 p {
     font-size: 1.5em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    line-height: 1.4em;
+    line-height: 1.5;
     color: #333;
 }
 footer {
@@ -40,10 +40,11 @@ footer {
 
 dl { 
     margin: 20px auto 40px; 
-    font-size: 1.5em;
+    font-size: 1.5;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 dl dd {
     list-style-type: circle;
+    list-style-position: outside;
 }
