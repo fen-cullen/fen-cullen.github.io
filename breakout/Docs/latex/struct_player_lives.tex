@@ -1,0 +1,56 @@
+\hypertarget{struct_player_lives}{}\doxysection{Player\+Lives Struct Reference}
+\label{struct_player_lives}\index{PlayerLives@{PlayerLives}}
+
+
+{\ttfamily \#include $<$HUD.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_player_lives_a5dc55fccd708cfbeca81d92fc1d2fdb7}{Player\+Lives}} (\mbox{\hyperlink{struct_vector2_d}{Vector2D}} position, TTF\+\_\+\+Font $\ast$font, SDL\+\_\+\+Renderer $\ast$renderer)
+\item 
+\mbox{\hyperlink{struct_player_lives_a74741e42bddc808a2a396e7c92a78a1c}{$\sim$\+Player\+Lives}} ()
+\item 
+void \mbox{\hyperlink{struct_player_lives_aa18ee8354720b95daad5ba2a7438144e}{Draw}} ()
+\item 
+void \mbox{\hyperlink{struct_player_lives_a2084c4a6ffd6d381137a387a0fc28cab}{Set\+Lives}} (int \&lives)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class handles rendering lives text. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_player_lives_a5dc55fccd708cfbeca81d92fc1d2fdb7}\label{struct_player_lives_a5dc55fccd708cfbeca81d92fc1d2fdb7}} 
+\index{PlayerLives@{PlayerLives}!PlayerLives@{PlayerLives}}
+\index{PlayerLives@{PlayerLives}!PlayerLives@{PlayerLives}}
+\doxysubsubsection{\texorpdfstring{PlayerLives()}{PlayerLives()}}
+{\footnotesize\ttfamily Player\+Lives\+::\+Player\+Lives (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2_d}{Vector2D}}}]{position,  }\item[{TTF\+\_\+\+Font $\ast$}]{font,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+Constructs \mbox{\hyperlink{struct_player_lives}{Player\+Lives}} Position\+: text position Font\+: text font Renderer\+: renderer to draw to \mbox{\Hypertarget{struct_player_lives_a74741e42bddc808a2a396e7c92a78a1c}\label{struct_player_lives_a74741e42bddc808a2a396e7c92a78a1c}} 
+\index{PlayerLives@{PlayerLives}!````~PlayerLives@{$\sim$PlayerLives}}
+\index{````~PlayerLives@{$\sim$PlayerLives}!PlayerLives@{PlayerLives}}
+\doxysubsubsection{\texorpdfstring{$\sim$PlayerLives()}{~PlayerLives()}}
+{\footnotesize\ttfamily Player\+Lives\+::$\sim$\+Player\+Lives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_player_lives_aa18ee8354720b95daad5ba2a7438144e}\label{struct_player_lives_aa18ee8354720b95daad5ba2a7438144e}} 
+\index{PlayerLives@{PlayerLives}!Draw@{Draw}}
+\index{Draw@{Draw}!PlayerLives@{PlayerLives}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Player\+Lives\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Draws the lives text onto the renderer \mbox{\Hypertarget{struct_player_lives_a2084c4a6ffd6d381137a387a0fc28cab}\label{struct_player_lives_a2084c4a6ffd6d381137a387a0fc28cab}} 
+\index{PlayerLives@{PlayerLives}!SetLives@{SetLives}}
+\index{SetLives@{SetLives}!PlayerLives@{PlayerLives}}
+\doxysubsubsection{\texorpdfstring{SetLives()}{SetLives()}}
+{\footnotesize\ttfamily void Player\+Lives\+::\+Set\+Lives (\begin{DoxyParamCaption}\item[{int \&}]{lives }\end{DoxyParamCaption})}
+
+Updates lives text (must \mbox{\hyperlink{struct_player_lives_aa18ee8354720b95daad5ba2a7438144e}{Draw()}} again for it to appear on screen) 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game/include/\mbox{\hyperlink{_h_u_d_8h}{HUD.\+h}}\item 
+Game/src/\mbox{\hyperlink{_h_u_d_8cpp}{HUD.\+cpp}}\end{DoxyCompactItemize}

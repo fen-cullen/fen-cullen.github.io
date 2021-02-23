@@ -1,0 +1,110 @@
+\hypertarget{struct_ball}{}\doxysection{Ball Struct Reference}
+\label{struct_ball}\index{Ball@{Ball}}
+
+
+{\ttfamily \#include $<$Ball.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_ball_ab1aa897e3bc165b53eedadbc8b3e36e4}{Ball}} (\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{struct_ball_a20ef34179d47bb86904b47e2196fa81e}{position}}, \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{struct_ball_af0a9d4eee0da60d5162c3e09cc805d66}{velocity}})
+\item 
+\mbox{\hyperlink{struct_ball_a20f2f6ac0bf648f406a8e12e63429fcd}{$\sim$\+Ball}} ()
+\item 
+void \mbox{\hyperlink{struct_ball_ac2f234d525c0fcf04334ac1d0acf5653}{Update}} ()
+\item 
+void \mbox{\hyperlink{struct_ball_a9ed7455edf94a25227ba6b4db451770f}{Draw}} (SDL\+\_\+\+Renderer $\ast$renderer)
+\item 
+void \mbox{\hyperlink{struct_ball_a314edd8c6ce2dea9de8c070f644b642f}{Collide\+With\+Paddle}} (\mbox{\hyperlink{struct_contact}{Contact}} const \&contact)
+\item 
+void \mbox{\hyperlink{struct_ball_a09e9bc510d964a14b5bc17ca73a9b278}{Collide\+With\+Wall}} (\mbox{\hyperlink{struct_contact}{Contact}} const \&contact)
+\item 
+void \mbox{\hyperlink{struct_ball_a156396a0ff0c35bead5cd8bbe9d4b2a4}{Collide\+With\+Block}} (\mbox{\hyperlink{struct_contact}{Contact}} const \&contact)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{struct_ball_a20ef34179d47bb86904b47e2196fa81e}{position}}
+\item 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{struct_ball_af0a9d4eee0da60d5162c3e09cc805d66}{velocity}}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{struct_ball_ad4f294b00d5bab91244f192e01b3082f}{rect}} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a \mbox{\hyperlink{struct_ball}{Ball}} with a position and velocity. Drawn as a rectangle. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_ball_ab1aa897e3bc165b53eedadbc8b3e36e4}\label{struct_ball_ab1aa897e3bc165b53eedadbc8b3e36e4}} 
+\index{Ball@{Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Ball()}{Ball()}}
+{\footnotesize\ttfamily Ball\+::\+Ball (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2_d}{Vector2D}}}]{position,  }\item[{\mbox{\hyperlink{struct_vector2_d}{Vector2D}}}]{velocity }\end{DoxyParamCaption})}
+
+Construct ball with position and velocity \mbox{\Hypertarget{struct_ball_a20f2f6ac0bf648f406a8e12e63429fcd}\label{struct_ball_a20f2f6ac0bf648f406a8e12e63429fcd}} 
+\index{Ball@{Ball}!````~Ball@{$\sim$Ball}}
+\index{````~Ball@{$\sim$Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{$\sim$Ball()}{~Ball()}}
+{\footnotesize\ttfamily Ball\+::$\sim$\+Ball (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_ball_a156396a0ff0c35bead5cd8bbe9d4b2a4}\label{struct_ball_a156396a0ff0c35bead5cd8bbe9d4b2a4}} 
+\index{Ball@{Ball}!CollideWithBlock@{CollideWithBlock}}
+\index{CollideWithBlock@{CollideWithBlock}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{CollideWithBlock()}{CollideWithBlock()}}
+{\footnotesize\ttfamily void Ball\+::\+Collide\+With\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_contact}{Contact}} const \&}]{contact }\end{DoxyParamCaption})}
+
+Handles collision with the block \mbox{\Hypertarget{struct_ball_a314edd8c6ce2dea9de8c070f644b642f}\label{struct_ball_a314edd8c6ce2dea9de8c070f644b642f}} 
+\index{Ball@{Ball}!CollideWithPaddle@{CollideWithPaddle}}
+\index{CollideWithPaddle@{CollideWithPaddle}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{CollideWithPaddle()}{CollideWithPaddle()}}
+{\footnotesize\ttfamily void Ball\+::\+Collide\+With\+Paddle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_contact}{Contact}} const \&}]{contact }\end{DoxyParamCaption})}
+
+Handles collision with the paddle \mbox{\Hypertarget{struct_ball_a09e9bc510d964a14b5bc17ca73a9b278}\label{struct_ball_a09e9bc510d964a14b5bc17ca73a9b278}} 
+\index{Ball@{Ball}!CollideWithWall@{CollideWithWall}}
+\index{CollideWithWall@{CollideWithWall}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{CollideWithWall()}{CollideWithWall()}}
+{\footnotesize\ttfamily void Ball\+::\+Collide\+With\+Wall (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_contact}{Contact}} const \&}]{contact }\end{DoxyParamCaption})}
+
+Handles collision with the walls \mbox{\Hypertarget{struct_ball_a9ed7455edf94a25227ba6b4db451770f}\label{struct_ball_a9ed7455edf94a25227ba6b4db451770f}} 
+\index{Ball@{Ball}!Draw@{Draw}}
+\index{Draw@{Draw}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Ball\+::\+Draw (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+Draws ball onto the renderer \mbox{\Hypertarget{struct_ball_ac2f234d525c0fcf04334ac1d0acf5653}\label{struct_ball_ac2f234d525c0fcf04334ac1d0acf5653}} 
+\index{Ball@{Ball}!Update@{Update}}
+\index{Update@{Update}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Ball\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Moves ball by velocity 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_ball_a20ef34179d47bb86904b47e2196fa81e}\label{struct_ball_a20ef34179d47bb86904b47e2196fa81e}} 
+\index{Ball@{Ball}!position@{position}}
+\index{position@{position}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2_d}{Vector2D}} Ball\+::position}
+
+\mbox{\Hypertarget{struct_ball_ad4f294b00d5bab91244f192e01b3082f}\label{struct_ball_ad4f294b00d5bab91244f192e01b3082f}} 
+\index{Ball@{Ball}!rect@{rect}}
+\index{rect@{rect}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{rect}{rect}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Ball\+::rect \{\}}
+
+\mbox{\Hypertarget{struct_ball_af0a9d4eee0da60d5162c3e09cc805d66}\label{struct_ball_af0a9d4eee0da60d5162c3e09cc805d66}} 
+\index{Ball@{Ball}!velocity@{velocity}}
+\index{velocity@{velocity}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2_d}{Vector2D}} Ball\+::velocity}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game/include/\mbox{\hyperlink{_ball_8h}{Ball.\+h}}\item 
+Game/src/\mbox{\hyperlink{_ball_8cpp}{Ball.\+cpp}}\end{DoxyCompactItemize}

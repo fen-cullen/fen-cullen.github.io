@@ -1,0 +1,64 @@
+\hypertarget{struct_resource_manager}{}\doxysection{Resource\+Manager Struct Reference}
+\label{struct_resource_manager}\index{ResourceManager@{ResourceManager}}
+
+
+{\ttfamily \#include $<$Resource\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{struct_resource_manager_a53bf358b029e050a285725bc70a8550a}{start\+Up}} ()
+\item 
+int \mbox{\hyperlink{struct_resource_manager_ab8d9779f5f957610d272525cc32a775e}{shut\+Down}} ()
+\item 
+int \mbox{\hyperlink{struct_resource_manager_a1ee727a3ca5243329b9e121dd87bde48}{Add}} (const std\+::string \&file\+Path, SDL\+\_\+\+Renderer $\ast$renderer)
+\item 
+SDL\+\_\+\+Texture $\ast$ \mbox{\hyperlink{struct_resource_manager_af2748c3f664c504ef83d63b8b4e6bb08}{Get}} (const std\+::string \&file\+Path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{struct_resource_manager}{Resource\+Manager}} \& \mbox{\hyperlink{struct_resource_manager_a37d0e97686c031cef9b22725ba4a6005}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages shared game resources such as image textures. A singleton class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_resource_manager_a1ee727a3ca5243329b9e121dd87bde48}\label{struct_resource_manager_a1ee727a3ca5243329b9e121dd87bde48}} 
+\index{ResourceManager@{ResourceManager}!Add@{Add}}
+\index{Add@{Add}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily int Resource\+Manager\+::\+Add (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+Manage the bmp at file\+Path. Creates a texture from the bmp at file\+Path and adds it to Map. \mbox{\Hypertarget{struct_resource_manager_af2748c3f664c504ef83d63b8b4e6bb08}\label{struct_resource_manager_af2748c3f664c504ef83d63b8b4e6bb08}} 
+\index{ResourceManager@{ResourceManager}!Get@{Get}}
+\index{Get@{Get}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{Get()}{Get()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture $\ast$ Resource\+Manager\+::\+Get (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})}
+
+Gets the texture associated with this file\+Path \mbox{\Hypertarget{struct_resource_manager_a37d0e97686c031cef9b22725ba4a6005}\label{struct_resource_manager_a37d0e97686c031cef9b22725ba4a6005}} 
+\index{ResourceManager@{ResourceManager}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_resource_manager}{Resource\+Manager}} \& Resource\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Only way to get the one instance of this object \mbox{\Hypertarget{struct_resource_manager_ab8d9779f5f957610d272525cc32a775e}\label{struct_resource_manager_ab8d9779f5f957610d272525cc32a775e}} 
+\index{ResourceManager@{ResourceManager}!shutDown@{shutDown}}
+\index{shutDown@{shutDown}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{shutDown()}{shutDown()}}
+{\footnotesize\ttfamily int Resource\+Manager\+::shut\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\textquotesingle{}equivalent\textquotesingle{} to our destuctor \mbox{\Hypertarget{struct_resource_manager_a53bf358b029e050a285725bc70a8550a}\label{struct_resource_manager_a53bf358b029e050a285725bc70a8550a}} 
+\index{ResourceManager@{ResourceManager}!startUp@{startUp}}
+\index{startUp@{startUp}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{startUp()}{startUp()}}
+{\footnotesize\ttfamily int Resource\+Manager\+::start\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\textquotesingle{}equivalent\textquotesingle{} to our constructor 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game/include/\mbox{\hyperlink{_resource_manager_8h}{Resource\+Manager.\+h}}\item 
+Game/src/\mbox{\hyperlink{_resource_manager_8cpp}{Resource\+Manager.\+cpp}}\end{DoxyCompactItemize}

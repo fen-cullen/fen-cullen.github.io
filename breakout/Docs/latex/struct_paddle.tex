@@ -1,0 +1,86 @@
+\hypertarget{struct_paddle}{}\doxysection{Paddle Struct Reference}
+\label{struct_paddle}\index{Paddle@{Paddle}}
+
+
+{\ttfamily \#include $<$Paddle.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_paddle_a8bbf3d23120145b57e8d1bb41528b680}{Paddle}} (\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{struct_paddle_a8805e8dd207da6aa5f3802c063d17e2d}{position}}, \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{struct_paddle_a03d61d861fa67d23d1ca297e2bd240b3}{velocity}})
+\item 
+\mbox{\hyperlink{struct_paddle_ac03c6b92f0b9cd2e67edff4c318ad030}{$\sim$\+Paddle}} ()
+\item 
+void \mbox{\hyperlink{struct_paddle_a59cd0474cd66883f93aafb0bc926105b}{Update}} ()
+\item 
+void \mbox{\hyperlink{struct_paddle_ab9748edffd50cb22d56425160ac4477a}{Draw}} (SDL\+\_\+\+Renderer $\ast$renderer)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{struct_paddle_a8805e8dd207da6aa5f3802c063d17e2d}{position}}
+\item 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{struct_paddle_a03d61d861fa67d23d1ca297e2bd240b3}{velocity}}
+\item 
+SDL\+\_\+\+Rect \mbox{\hyperlink{struct_paddle_a3ba553ef3fbf45b23f2e2d866838e36b}{rect}} \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a \mbox{\hyperlink{struct_paddle}{Paddle}} with position and velocity. Drawn as a rectangle. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_paddle_a8bbf3d23120145b57e8d1bb41528b680}\label{struct_paddle_a8bbf3d23120145b57e8d1bb41528b680}} 
+\index{Paddle@{Paddle}!Paddle@{Paddle}}
+\index{Paddle@{Paddle}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{Paddle()}{Paddle()}}
+{\footnotesize\ttfamily Paddle\+::\+Paddle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2_d}{Vector2D}}}]{position,  }\item[{\mbox{\hyperlink{struct_vector2_d}{Vector2D}}}]{velocity }\end{DoxyParamCaption})}
+
+Construct paddle with position and velocity \mbox{\Hypertarget{struct_paddle_ac03c6b92f0b9cd2e67edff4c318ad030}\label{struct_paddle_ac03c6b92f0b9cd2e67edff4c318ad030}} 
+\index{Paddle@{Paddle}!````~Paddle@{$\sim$Paddle}}
+\index{````~Paddle@{$\sim$Paddle}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{$\sim$Paddle()}{~Paddle()}}
+{\footnotesize\ttfamily Paddle\+::$\sim$\+Paddle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+destruct paddle 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_paddle_ab9748edffd50cb22d56425160ac4477a}\label{struct_paddle_ab9748edffd50cb22d56425160ac4477a}} 
+\index{Paddle@{Paddle}!Draw@{Draw}}
+\index{Draw@{Draw}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Paddle\+::\+Draw (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+Draw paddle onto renderer \mbox{\Hypertarget{struct_paddle_a59cd0474cd66883f93aafb0bc926105b}\label{struct_paddle_a59cd0474cd66883f93aafb0bc926105b}} 
+\index{Paddle@{Paddle}!Update@{Update}}
+\index{Update@{Update}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Paddle\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Moves paddle by velocity 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_paddle_a8805e8dd207da6aa5f3802c063d17e2d}\label{struct_paddle_a8805e8dd207da6aa5f3802c063d17e2d}} 
+\index{Paddle@{Paddle}!position@{position}}
+\index{position@{position}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2_d}{Vector2D}} Paddle\+::position}
+
+\mbox{\Hypertarget{struct_paddle_a3ba553ef3fbf45b23f2e2d866838e36b}\label{struct_paddle_a3ba553ef3fbf45b23f2e2d866838e36b}} 
+\index{Paddle@{Paddle}!rect@{rect}}
+\index{rect@{rect}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{rect}{rect}}
+{\footnotesize\ttfamily SDL\+\_\+\+Rect Paddle\+::rect \{\}}
+
+\mbox{\Hypertarget{struct_paddle_a03d61d861fa67d23d1ca297e2bd240b3}\label{struct_paddle_a03d61d861fa67d23d1ca297e2bd240b3}} 
+\index{Paddle@{Paddle}!velocity@{velocity}}
+\index{velocity@{velocity}!Paddle@{Paddle}}
+\doxysubsubsection{\texorpdfstring{velocity}{velocity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2_d}{Vector2D}} Paddle\+::velocity}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game/include/\mbox{\hyperlink{_paddle_8h}{Paddle.\+h}}\item 
+Game/src/\mbox{\hyperlink{_paddle_8cpp}{Paddle.\+cpp}}\end{DoxyCompactItemize}

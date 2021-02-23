@@ -1,0 +1,55 @@
+\hypertarget{_contact_8cpp}{}\doxysection{Game/src/\+Contact.cpp File Reference}
+\label{_contact_8cpp}\index{Game/src/Contact.cpp@{Game/src/Contact.cpp}}
+{\ttfamily \#include \char`\"{}../include/\+Contact.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_contact}{Contact}} \mbox{\hyperlink{_contact_8cpp_ac68df32a9312e8d47ccded6a455f1188}{Check\+Paddle\+Collision}} (\mbox{\hyperlink{struct_ball}{Ball}} const \&\mbox{\hyperlink{_breakout_8cpp_a51879c64fa451a100a488b6a99c72cce}{ball}}, \mbox{\hyperlink{struct_paddle}{Paddle}} const \&\mbox{\hyperlink{_breakout_8cpp_a4f4cc7161ea254d690074a961fa53791}{paddle}})
+\item 
+\mbox{\hyperlink{struct_contact}{Contact}} \mbox{\hyperlink{_contact_8cpp_aeb2bebe92399c2787038e7d67c831504}{Check\+Wall\+Collision}} (\mbox{\hyperlink{struct_ball}{Ball}} const \&\mbox{\hyperlink{_breakout_8cpp_a51879c64fa451a100a488b6a99c72cce}{ball}})
+\item 
+\mbox{\hyperlink{struct_contact}{Contact}} \mbox{\hyperlink{_contact_8cpp_ad3207e4b283976e1b07026ae1b0e234a}{Check\+Block\+Collision}} (\mbox{\hyperlink{struct_ball}{Ball}} const \&\mbox{\hyperlink{_breakout_8cpp_a51879c64fa451a100a488b6a99c72cce}{ball}}, \mbox{\hyperlink{struct_block}{Block}} const \&block)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{_contact_8cpp_a5e6ce0dd58078611570510dc4b8d81f3}{WINDOW\+\_\+\+WIDTH}}
+\item 
+const int \mbox{\hyperlink{_contact_8cpp_ab76d138fa589df9a65fc05eb3bd56073}{WINDOW\+\_\+\+HEIGHT}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_contact_8cpp_ad3207e4b283976e1b07026ae1b0e234a}\label{_contact_8cpp_ad3207e4b283976e1b07026ae1b0e234a}} 
+\index{Contact.cpp@{Contact.cpp}!CheckBlockCollision@{CheckBlockCollision}}
+\index{CheckBlockCollision@{CheckBlockCollision}!Contact.cpp@{Contact.cpp}}
+\doxysubsubsection{\texorpdfstring{CheckBlockCollision()}{CheckBlockCollision()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_contact}{Contact}} Check\+Block\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ball}{Ball}} const \&}]{ball,  }\item[{\mbox{\hyperlink{struct_block}{Block}} const \&}]{block }\end{DoxyParamCaption})}
+
+Collects \mbox{\hyperlink{struct_contact}{Contact}} data between the ball and block (possibly no collision) \mbox{\Hypertarget{_contact_8cpp_ac68df32a9312e8d47ccded6a455f1188}\label{_contact_8cpp_ac68df32a9312e8d47ccded6a455f1188}} 
+\index{Contact.cpp@{Contact.cpp}!CheckPaddleCollision@{CheckPaddleCollision}}
+\index{CheckPaddleCollision@{CheckPaddleCollision}!Contact.cpp@{Contact.cpp}}
+\doxysubsubsection{\texorpdfstring{CheckPaddleCollision()}{CheckPaddleCollision()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_contact}{Contact}} Check\+Paddle\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ball}{Ball}} const \&}]{ball,  }\item[{\mbox{\hyperlink{struct_paddle}{Paddle}} const \&}]{paddle }\end{DoxyParamCaption})}
+
+Collects \mbox{\hyperlink{struct_contact}{Contact}} data between the ball and paddle (possibly no collision) \mbox{\Hypertarget{_contact_8cpp_aeb2bebe92399c2787038e7d67c831504}\label{_contact_8cpp_aeb2bebe92399c2787038e7d67c831504}} 
+\index{Contact.cpp@{Contact.cpp}!CheckWallCollision@{CheckWallCollision}}
+\index{CheckWallCollision@{CheckWallCollision}!Contact.cpp@{Contact.cpp}}
+\doxysubsubsection{\texorpdfstring{CheckWallCollision()}{CheckWallCollision()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_contact}{Contact}} Check\+Wall\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ball}{Ball}} const \&}]{ball }\end{DoxyParamCaption})}
+
+Collects \mbox{\hyperlink{struct_contact}{Contact}} data between the ball and walls (possibly no collision) 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_contact_8cpp_ab76d138fa589df9a65fc05eb3bd56073}\label{_contact_8cpp_ab76d138fa589df9a65fc05eb3bd56073}} 
+\index{Contact.cpp@{Contact.cpp}!WINDOW\_HEIGHT@{WINDOW\_HEIGHT}}
+\index{WINDOW\_HEIGHT@{WINDOW\_HEIGHT}!Contact.cpp@{Contact.cpp}}
+\doxysubsubsection{\texorpdfstring{WINDOW\_HEIGHT}{WINDOW\_HEIGHT}}
+{\footnotesize\ttfamily const int WINDOW\+\_\+\+HEIGHT\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_contact_8cpp_a5e6ce0dd58078611570510dc4b8d81f3}\label{_contact_8cpp_a5e6ce0dd58078611570510dc4b8d81f3}} 
+\index{Contact.cpp@{Contact.cpp}!WINDOW\_WIDTH@{WINDOW\_WIDTH}}
+\index{WINDOW\_WIDTH@{WINDOW\_WIDTH}!Contact.cpp@{Contact.cpp}}
+\doxysubsubsection{\texorpdfstring{WINDOW\_WIDTH}{WINDOW\_WIDTH}}
+{\footnotesize\ttfamily const int WINDOW\+\_\+\+WIDTH\hspace{0.3cm}{\ttfamily [extern]}}
+

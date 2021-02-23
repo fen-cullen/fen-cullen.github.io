@@ -1,0 +1,56 @@
+\hypertarget{struct_player_score}{}\doxysection{Player\+Score Struct Reference}
+\label{struct_player_score}\index{PlayerScore@{PlayerScore}}
+
+
+{\ttfamily \#include $<$HUD.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_player_score_a827e68f136e6fd662fd6b033f69de8bf}{Player\+Score}} (\mbox{\hyperlink{struct_vector2_d}{Vector2D}} position, TTF\+\_\+\+Font $\ast$font, SDL\+\_\+\+Renderer $\ast$renderer)
+\item 
+\mbox{\hyperlink{struct_player_score_a67b8bd718adf6ca558a869f4708764a9}{$\sim$\+Player\+Score}} ()
+\item 
+void \mbox{\hyperlink{struct_player_score_a464e536f8ed931d91f3e93a782c610bd}{Draw}} ()
+\item 
+void \mbox{\hyperlink{struct_player_score_aa88b17d890af0f3f4642d6fa36ca5b9a}{Set\+Score}} (int score)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class handles rendering score text. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_player_score_a827e68f136e6fd662fd6b033f69de8bf}\label{struct_player_score_a827e68f136e6fd662fd6b033f69de8bf}} 
+\index{PlayerScore@{PlayerScore}!PlayerScore@{PlayerScore}}
+\index{PlayerScore@{PlayerScore}!PlayerScore@{PlayerScore}}
+\doxysubsubsection{\texorpdfstring{PlayerScore()}{PlayerScore()}}
+{\footnotesize\ttfamily Player\+Score\+::\+Player\+Score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2_d}{Vector2D}}}]{position,  }\item[{TTF\+\_\+\+Font $\ast$}]{font,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+Constructs \mbox{\hyperlink{struct_player_score}{Player\+Score}} Position\+: text position Font\+: text font Renderer\+: renderer to draw to \mbox{\Hypertarget{struct_player_score_a67b8bd718adf6ca558a869f4708764a9}\label{struct_player_score_a67b8bd718adf6ca558a869f4708764a9}} 
+\index{PlayerScore@{PlayerScore}!````~PlayerScore@{$\sim$PlayerScore}}
+\index{````~PlayerScore@{$\sim$PlayerScore}!PlayerScore@{PlayerScore}}
+\doxysubsubsection{\texorpdfstring{$\sim$PlayerScore()}{~PlayerScore()}}
+{\footnotesize\ttfamily Player\+Score\+::$\sim$\+Player\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_player_score_a464e536f8ed931d91f3e93a782c610bd}\label{struct_player_score_a464e536f8ed931d91f3e93a782c610bd}} 
+\index{PlayerScore@{PlayerScore}!Draw@{Draw}}
+\index{Draw@{Draw}!PlayerScore@{PlayerScore}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Player\+Score\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Draws the score text onto the renderer \mbox{\Hypertarget{struct_player_score_aa88b17d890af0f3f4642d6fa36ca5b9a}\label{struct_player_score_aa88b17d890af0f3f4642d6fa36ca5b9a}} 
+\index{PlayerScore@{PlayerScore}!SetScore@{SetScore}}
+\index{SetScore@{SetScore}!PlayerScore@{PlayerScore}}
+\doxysubsubsection{\texorpdfstring{SetScore()}{SetScore()}}
+{\footnotesize\ttfamily void Player\+Score\+::\+Set\+Score (\begin{DoxyParamCaption}\item[{int}]{score }\end{DoxyParamCaption})}
+
+Updates score text (must \mbox{\hyperlink{struct_player_score_a464e536f8ed931d91f3e93a782c610bd}{Draw()}} again for it to appear on screen) 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game/include/\mbox{\hyperlink{_h_u_d_8h}{HUD.\+h}}\item 
+Game/src/\mbox{\hyperlink{_h_u_d_8cpp}{HUD.\+cpp}}\end{DoxyCompactItemize}

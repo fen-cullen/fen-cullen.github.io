@@ -1,0 +1,79 @@
+\hypertarget{_vector2_d_8h}{}\doxysection{Game/include/\+Vector2D.h File Reference}
+\label{_vector2_d_8h}\index{Game/include/Vector2D.h@{Game/include/Vector2D.h}}
+{\ttfamily \#include $<$cmath$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_vector2_d}{Vector2D}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{_vector2_d_8h_aa025c19d4e3859ac5cdcdf7301fb31b0}{operator+}} (const \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \&a, const \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \&b)
+\item 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{_vector2_d_8h_ac638052636e6afad1ec34e1bc40610bd}{operator-\/}} (const \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \&a, const \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \&b)
+\item 
+float \mbox{\hyperlink{_vector2_d_8h_a081543324d5930ec2b2ca0a93a96cd3e}{Dot}} (const \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \&a, const \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \&b)
+\item 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{_vector2_d_8h_a172e6cc6a79302f1ce4146d6e7913276}{operator$\ast$}} (const \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \&v, float s)
+\item 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{_vector2_d_8h_a68470f176169f841c9558cca66b38934}{operator/}} (const \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \&v, float s)
+\item 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{_vector2_d_8h_ada6fe079849b5569f44d3dc71c77e94a}{operator-\/}} (const \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \&v)
+\item 
+float \mbox{\hyperlink{_vector2_d_8h_a0e63c94fd17352d9da4844971618e1c8}{Magnitude}} (const \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \&v)
+\item 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{_vector2_d_8h_aa9e7037884fe8b98a212394d9c37d14d}{Normalize}} (const \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \&v)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_vector2_d_8h_a081543324d5930ec2b2ca0a93a96cd3e}\label{_vector2_d_8h_a081543324d5930ec2b2ca0a93a96cd3e}} 
+\index{Vector2D.h@{Vector2D.h}!Dot@{Dot}}
+\index{Dot@{Dot}!Vector2D.h@{Vector2D.h}}
+\doxysubsubsection{\texorpdfstring{Dot()}{Dot()}}
+{\footnotesize\ttfamily float Dot (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \&}]{a,  }\item[{const \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compute dot product of two vectors \mbox{\Hypertarget{_vector2_d_8h_a0e63c94fd17352d9da4844971618e1c8}\label{_vector2_d_8h_a0e63c94fd17352d9da4844971618e1c8}} 
+\index{Vector2D.h@{Vector2D.h}!Magnitude@{Magnitude}}
+\index{Magnitude@{Magnitude}!Vector2D.h@{Vector2D.h}}
+\doxysubsubsection{\texorpdfstring{Magnitude()}{Magnitude()}}
+{\footnotesize\ttfamily float Magnitude (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the magnitude of a vector \mbox{\Hypertarget{_vector2_d_8h_aa9e7037884fe8b98a212394d9c37d14d}\label{_vector2_d_8h_aa9e7037884fe8b98a212394d9c37d14d}} 
+\index{Vector2D.h@{Vector2D.h}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!Vector2D.h@{Vector2D.h}}
+\doxysubsubsection{\texorpdfstring{Normalize()}{Normalize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2_d}{Vector2D}} Normalize (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Compute the unit vector \mbox{\Hypertarget{_vector2_d_8h_a172e6cc6a79302f1ce4146d6e7913276}\label{_vector2_d_8h_a172e6cc6a79302f1ce4146d6e7913276}} 
+\index{Vector2D.h@{Vector2D.h}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vector2D.h@{Vector2D.h}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2_d}{Vector2D}} operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \&}]{v,  }\item[{float}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Multiply a vector by a scalar \mbox{\Hypertarget{_vector2_d_8h_aa025c19d4e3859ac5cdcdf7301fb31b0}\label{_vector2_d_8h_aa025c19d4e3859ac5cdcdf7301fb31b0}} 
+\index{Vector2D.h@{Vector2D.h}!operator+@{operator+}}
+\index{operator+@{operator+}!Vector2D.h@{Vector2D.h}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2_d}{Vector2D}} operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \&}]{a,  }\item[{const \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add two vectors together \mbox{\Hypertarget{_vector2_d_8h_ac638052636e6afad1ec34e1bc40610bd}\label{_vector2_d_8h_ac638052636e6afad1ec34e1bc40610bd}} 
+\index{Vector2D.h@{Vector2D.h}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vector2D.h@{Vector2D.h}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2_d}{Vector2D}} operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \&}]{a,  }\item[{const \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Subtract two vectors \mbox{\Hypertarget{_vector2_d_8h_ada6fe079849b5569f44d3dc71c77e94a}\label{_vector2_d_8h_ada6fe079849b5569f44d3dc71c77e94a}} 
+\index{Vector2D.h@{Vector2D.h}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vector2D.h@{Vector2D.h}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2_d}{Vector2D}} operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Negate a vector \mbox{\Hypertarget{_vector2_d_8h_a68470f176169f841c9558cca66b38934}\label{_vector2_d_8h_a68470f176169f841c9558cca66b38934}} 
+\index{Vector2D.h@{Vector2D.h}!operator/@{operator/}}
+\index{operator/@{operator/}!Vector2D.h@{Vector2D.h}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2_d}{Vector2D}} operator/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \&}]{v,  }\item[{float}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Division of a vector by a scalar value. 

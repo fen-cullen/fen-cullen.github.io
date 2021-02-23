@@ -1,0 +1,153 @@
+\hypertarget{_breakout_8cpp}{}\doxysection{Game/src/\+Breakout.cpp File Reference}
+\label{_breakout_8cpp}\index{Game/src/Breakout.cpp@{Game/src/Breakout.cpp}}
+{\ttfamily \#include \char`\"{}../include/\+Breakout.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$SDL.\+h$>$}\newline
+{\ttfamily \#include $<$SDL\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include $<$SDL\+\_\+mixer.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include \char`\"{}../include/\+Vector2\+D.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/\+HUD.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../include/\+Ball.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_player_score}{Player\+Score}} $>$ \mbox{\hyperlink{_breakout_8cpp_ac03477e82cd5afa61d1103d1068b807b}{score\+Text}} (nullptr)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_player_lives}{Player\+Lives}} $>$ \mbox{\hyperlink{_breakout_8cpp_a23d072179e65a58884585b29db905d4a}{lives\+Text}} (nullptr)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_paddle}{Paddle}} $>$ \mbox{\hyperlink{_breakout_8cpp_a4f4cc7161ea254d690074a961fa53791}{paddle}} (nullptr)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_ball}{Ball}} $>$ \mbox{\hyperlink{_breakout_8cpp_a51879c64fa451a100a488b6a99c72cce}{ball}} (nullptr)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{_breakout_8cpp_a5e6ce0dd58078611570510dc4b8d81f3}{WINDOW\+\_\+\+WIDTH}} = 1045
+\item 
+const int \mbox{\hyperlink{_breakout_8cpp_ab76d138fa589df9a65fc05eb3bd56073}{WINDOW\+\_\+\+HEIGHT}} = 650
+\item 
+const char $\ast$ \mbox{\hyperlink{_breakout_8cpp_aaa1a753bcf52595165e77b2271a24aba}{win\+String}}
+\item 
+const char $\ast$ \mbox{\hyperlink{_breakout_8cpp_a90c2b405e92f13047ca891f8e7e8e5e4}{lose\+String}}
+\item 
+const char $\ast$ \mbox{\hyperlink{_breakout_8cpp_a9f7e6a523fe25b9d8db992fe37f1cdaa}{HUDFONTPATH}} = \char`\"{}C\+:/Users/fencu/Git Repos/monorepo-\/fen-\/cullen/Assignment1\+\_\+\+Breakout/Game/Assets/font/lazy.\+ttf\char`\"{}
+\item 
+const char $\ast$ \mbox{\hyperlink{_breakout_8cpp_a7bb850e84e576539df266398b3595eb8}{MUSICPATH}} = \char`\"{}C\+:/Users/fencu/Git Repos/monorepo-\/fen-\/cullen/Assignment1\+\_\+\+Breakout/Game/Assets/music/Beep Boop.\+mp3\char`\"{}
+\item 
+const char $\ast$ \mbox{\hyperlink{_breakout_8cpp_a1de87a96a5562b5893872a7212af4ce3}{SFXPATH}} = \char`\"{}C\+:/Users/fencu/Git Repos/monorepo-\/fen-\/cullen/Assignment1\+\_\+\+Breakout/Game/Assets/sound/386862\+\_\+\+\_\+prof-\/mudkip\+\_\+\+\_\+8-\/bit-\/explosion.\+wav\char`\"{}
+\item 
+const char $\ast$ \mbox{\hyperlink{_breakout_8cpp_ab5c4906e2c8cb548644936d50d69fcd8}{LVLPATH}} = \char`\"{}C\+:/Users/fencu/Git Repos/monorepo-\/fen-\/cullen/Assignment1\+\_\+\+Breakout/Game/Assets/level/\char`\"{}
+\item 
+const int \mbox{\hyperlink{_breakout_8cpp_abb0c116a93de7c07fe49af7d329dfa08}{LASTLEVEL}} = 2
+\item 
+std\+::list$<$ \mbox{\hyperlink{struct_block}{Block}} $>$ \mbox{\hyperlink{_breakout_8cpp_acafb3ad7cb302c90797c2c5012da0d1f}{blocks}} \{\}
+\item 
+bool \mbox{\hyperlink{_breakout_8cpp_af24b684f2277eb023ecdbd5cd35718f6}{go\+Left}} = false
+\item 
+bool \mbox{\hyperlink{_breakout_8cpp_ada9a9c2d2e5ff0a8b14eb40aef184615}{go\+Right}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_breakout_8cpp_a51879c64fa451a100a488b6a99c72cce}\label{_breakout_8cpp_a51879c64fa451a100a488b6a99c72cce}} 
+\index{Breakout.cpp@{Breakout.cpp}!ball@{ball}}
+\index{ball@{ball}!Breakout.cpp@{Breakout.cpp}}
+\doxysubsubsection{\texorpdfstring{ball()}{ball()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_ball}{Ball}} $>$ ball (\begin{DoxyParamCaption}\item[{nullptr}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_breakout_8cpp_a23d072179e65a58884585b29db905d4a}\label{_breakout_8cpp_a23d072179e65a58884585b29db905d4a}} 
+\index{Breakout.cpp@{Breakout.cpp}!livesText@{livesText}}
+\index{livesText@{livesText}!Breakout.cpp@{Breakout.cpp}}
+\doxysubsubsection{\texorpdfstring{livesText()}{livesText()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_player_lives}{Player\+Lives}} $>$ lives\+Text (\begin{DoxyParamCaption}\item[{nullptr}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_breakout_8cpp_a4f4cc7161ea254d690074a961fa53791}\label{_breakout_8cpp_a4f4cc7161ea254d690074a961fa53791}} 
+\index{Breakout.cpp@{Breakout.cpp}!paddle@{paddle}}
+\index{paddle@{paddle}!Breakout.cpp@{Breakout.cpp}}
+\doxysubsubsection{\texorpdfstring{paddle()}{paddle()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_paddle}{Paddle}} $>$ paddle (\begin{DoxyParamCaption}\item[{nullptr}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_breakout_8cpp_ac03477e82cd5afa61d1103d1068b807b}\label{_breakout_8cpp_ac03477e82cd5afa61d1103d1068b807b}} 
+\index{Breakout.cpp@{Breakout.cpp}!scoreText@{scoreText}}
+\index{scoreText@{scoreText}!Breakout.cpp@{Breakout.cpp}}
+\doxysubsubsection{\texorpdfstring{scoreText()}{scoreText()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_player_score}{Player\+Score}} $>$ score\+Text (\begin{DoxyParamCaption}\item[{nullptr}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{_breakout_8cpp_acafb3ad7cb302c90797c2c5012da0d1f}\label{_breakout_8cpp_acafb3ad7cb302c90797c2c5012da0d1f}} 
+\index{Breakout.cpp@{Breakout.cpp}!blocks@{blocks}}
+\index{blocks@{blocks}!Breakout.cpp@{Breakout.cpp}}
+\doxysubsubsection{\texorpdfstring{blocks}{blocks}}
+{\footnotesize\ttfamily std\+::list$<$ \mbox{\hyperlink{struct_block}{Block}} $>$ blocks \{\}}
+
+\mbox{\Hypertarget{_breakout_8cpp_af24b684f2277eb023ecdbd5cd35718f6}\label{_breakout_8cpp_af24b684f2277eb023ecdbd5cd35718f6}} 
+\index{Breakout.cpp@{Breakout.cpp}!goLeft@{goLeft}}
+\index{goLeft@{goLeft}!Breakout.cpp@{Breakout.cpp}}
+\doxysubsubsection{\texorpdfstring{goLeft}{goLeft}}
+{\footnotesize\ttfamily bool go\+Left = false}
+
+\mbox{\Hypertarget{_breakout_8cpp_ada9a9c2d2e5ff0a8b14eb40aef184615}\label{_breakout_8cpp_ada9a9c2d2e5ff0a8b14eb40aef184615}} 
+\index{Breakout.cpp@{Breakout.cpp}!goRight@{goRight}}
+\index{goRight@{goRight}!Breakout.cpp@{Breakout.cpp}}
+\doxysubsubsection{\texorpdfstring{goRight}{goRight}}
+{\footnotesize\ttfamily bool go\+Right = false}
+
+\mbox{\Hypertarget{_breakout_8cpp_a9f7e6a523fe25b9d8db992fe37f1cdaa}\label{_breakout_8cpp_a9f7e6a523fe25b9d8db992fe37f1cdaa}} 
+\index{Breakout.cpp@{Breakout.cpp}!HUDFONTPATH@{HUDFONTPATH}}
+\index{HUDFONTPATH@{HUDFONTPATH}!Breakout.cpp@{Breakout.cpp}}
+\doxysubsubsection{\texorpdfstring{HUDFONTPATH}{HUDFONTPATH}}
+{\footnotesize\ttfamily const char$\ast$ HUDFONTPATH = \char`\"{}C\+:/Users/fencu/Git Repos/monorepo-\/fen-\/cullen/Assignment1\+\_\+\+Breakout/Game/Assets/font/lazy.\+ttf\char`\"{}}
+
+\mbox{\Hypertarget{_breakout_8cpp_abb0c116a93de7c07fe49af7d329dfa08}\label{_breakout_8cpp_abb0c116a93de7c07fe49af7d329dfa08}} 
+\index{Breakout.cpp@{Breakout.cpp}!LASTLEVEL@{LASTLEVEL}}
+\index{LASTLEVEL@{LASTLEVEL}!Breakout.cpp@{Breakout.cpp}}
+\doxysubsubsection{\texorpdfstring{LASTLEVEL}{LASTLEVEL}}
+{\footnotesize\ttfamily const int LASTLEVEL = 2}
+
+\mbox{\Hypertarget{_breakout_8cpp_a90c2b405e92f13047ca891f8e7e8e5e4}\label{_breakout_8cpp_a90c2b405e92f13047ca891f8e7e8e5e4}} 
+\index{Breakout.cpp@{Breakout.cpp}!loseString@{loseString}}
+\index{loseString@{loseString}!Breakout.cpp@{Breakout.cpp}}
+\doxysubsubsection{\texorpdfstring{loseString}{loseString}}
+{\footnotesize\ttfamily const char$\ast$ lose\+String\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_breakout_8cpp_ab5c4906e2c8cb548644936d50d69fcd8}\label{_breakout_8cpp_ab5c4906e2c8cb548644936d50d69fcd8}} 
+\index{Breakout.cpp@{Breakout.cpp}!LVLPATH@{LVLPATH}}
+\index{LVLPATH@{LVLPATH}!Breakout.cpp@{Breakout.cpp}}
+\doxysubsubsection{\texorpdfstring{LVLPATH}{LVLPATH}}
+{\footnotesize\ttfamily const char$\ast$ LVLPATH = \char`\"{}C\+:/Users/fencu/Git Repos/monorepo-\/fen-\/cullen/Assignment1\+\_\+\+Breakout/Game/Assets/level/\char`\"{}}
+
+\mbox{\Hypertarget{_breakout_8cpp_a7bb850e84e576539df266398b3595eb8}\label{_breakout_8cpp_a7bb850e84e576539df266398b3595eb8}} 
+\index{Breakout.cpp@{Breakout.cpp}!MUSICPATH@{MUSICPATH}}
+\index{MUSICPATH@{MUSICPATH}!Breakout.cpp@{Breakout.cpp}}
+\doxysubsubsection{\texorpdfstring{MUSICPATH}{MUSICPATH}}
+{\footnotesize\ttfamily const char$\ast$ MUSICPATH = \char`\"{}C\+:/Users/fencu/Git Repos/monorepo-\/fen-\/cullen/Assignment1\+\_\+\+Breakout/Game/Assets/music/Beep Boop.\+mp3\char`\"{}}
+
+\mbox{\Hypertarget{_breakout_8cpp_a1de87a96a5562b5893872a7212af4ce3}\label{_breakout_8cpp_a1de87a96a5562b5893872a7212af4ce3}} 
+\index{Breakout.cpp@{Breakout.cpp}!SFXPATH@{SFXPATH}}
+\index{SFXPATH@{SFXPATH}!Breakout.cpp@{Breakout.cpp}}
+\doxysubsubsection{\texorpdfstring{SFXPATH}{SFXPATH}}
+{\footnotesize\ttfamily const char$\ast$ SFXPATH = \char`\"{}C\+:/Users/fencu/Git Repos/monorepo-\/fen-\/cullen/Assignment1\+\_\+\+Breakout/Game/Assets/sound/386862\+\_\+\+\_\+prof-\/mudkip\+\_\+\+\_\+8-\/bit-\/explosion.\+wav\char`\"{}}
+
+\mbox{\Hypertarget{_breakout_8cpp_ab76d138fa589df9a65fc05eb3bd56073}\label{_breakout_8cpp_ab76d138fa589df9a65fc05eb3bd56073}} 
+\index{Breakout.cpp@{Breakout.cpp}!WINDOW\_HEIGHT@{WINDOW\_HEIGHT}}
+\index{WINDOW\_HEIGHT@{WINDOW\_HEIGHT}!Breakout.cpp@{Breakout.cpp}}
+\doxysubsubsection{\texorpdfstring{WINDOW\_HEIGHT}{WINDOW\_HEIGHT}}
+{\footnotesize\ttfamily const int WINDOW\+\_\+\+HEIGHT = 650\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_breakout_8cpp_a5e6ce0dd58078611570510dc4b8d81f3}\label{_breakout_8cpp_a5e6ce0dd58078611570510dc4b8d81f3}} 
+\index{Breakout.cpp@{Breakout.cpp}!WINDOW\_WIDTH@{WINDOW\_WIDTH}}
+\index{WINDOW\_WIDTH@{WINDOW\_WIDTH}!Breakout.cpp@{Breakout.cpp}}
+\doxysubsubsection{\texorpdfstring{WINDOW\_WIDTH}{WINDOW\_WIDTH}}
+{\footnotesize\ttfamily const int WINDOW\+\_\+\+WIDTH = 1045\hspace{0.3cm}{\ttfamily [extern]}}
+
+\mbox{\Hypertarget{_breakout_8cpp_aaa1a753bcf52595165e77b2271a24aba}\label{_breakout_8cpp_aaa1a753bcf52595165e77b2271a24aba}} 
+\index{Breakout.cpp@{Breakout.cpp}!winString@{winString}}
+\index{winString@{winString}!Breakout.cpp@{Breakout.cpp}}
+\doxysubsubsection{\texorpdfstring{winString}{winString}}
+{\footnotesize\ttfamily const char$\ast$ win\+String\hspace{0.3cm}{\ttfamily [extern]}}
+
